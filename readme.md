@@ -7,26 +7,31 @@ We have some customer records in a text file (customers.txt) -- one customer per
 ## Installation instructions 👩‍💻 
 The project is written in python 3. Please follow the below instructions to install Python on your machine.
 
+Download the project using
+```bash
+git clone https://github.com/uddish/intercom-activity.git
+```
+
 ### New to Python?
 
 **Pssst... Do you use a Mac?** 
 
-***Option 1***
+*Option 1*
 - Use Homebrew to install python -> ```brew install python```
 - Don't have homebrew installed? [Go to the Install Homebrew section](https://brew.sh/)
 
-***Option 2***
+*Option 2*
 - You can also use the official python installer. [Check this](https://www.python.org/downloads/mac-osx/).
 
-***Option 3***
+*Option 3*
 - Still not sure how to install Python. [Follow this extensive guide](https://realpython.com/installing-python/#how-to-install-python-on-macos) 
 
 **Are you a windows user?** 
 
-***Option 1***
+*Option 1*
 - Use the official [Python installer](https://www.python.org/downloads/windows/). 
 
-***Option 2***
+*Option 2*
 - Still stuck? Follow this [extensive guide](https://realpython.com/installing-python/#how-to-check-your-python-version-on-windows) 
 
 **Linux and Other Platforms?**
