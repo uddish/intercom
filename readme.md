@@ -110,7 +110,7 @@ python --version
 ## Unit Tests are important. Let's see how we can run them 👩‍🏫 
 Make sure that you are in the root **/intercom** folder.  
 Also, make sure that you virtual environment has been created and activated.  
-You can use the "**Creating and activating a Virtual environment**" section mentioned above to create and activate a virtualenv.
+You can use the [Creating and activating a Virtual environment](https://github.com/uddish/intercom#creating-and-activating-a-virtual-environment-) section mentioned above to create and activate a virtualenv.
 
 Try running the below command(after activating the virtualenv) to run the Test Cases
 ```bash
