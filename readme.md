@@ -9,7 +9,7 @@ The project is written in **python 3**. Please follow the below instructions to 
 
 Download the project using
 ```bash
-git clone https://github.com/uddish/intercom-activity.git
+git clone https://github.com/uddish/intercom.git
 ```
 
 ### New to Python?
@@ -57,7 +57,7 @@ python --version
 
 
 ## Unit Tests are important. Let's see how we can run them 👩‍🏫 
-Make sure that you are in the root **/Intercom** folder.
+Make sure that you are in the root **/intercom** folder.
 
 Try running the below command to run the Test Cases
 ```bash
@@ -71,7 +71,7 @@ Here, **tests** is the directory where all the test cases and the corresponding 
 
 The project has a sample **customers.txt** file which will be used to read the customer data.
 
-Make sure that you are in the root **/Intercom** folder.   
+Make sure that you are in the root **/intercom** folder.   
 
 Run the below command to execute the program.
 ```bash
