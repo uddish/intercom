@@ -12,6 +12,57 @@ Download the project using
 git clone https://github.com/uddish/intercom.git
 ```
 
+### Install pip [🔗](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#installing-pip)
+#### MacOS and Linux
+```
+python3 -m pip install --user --upgrade pip
+```
+
+#### Windows   
+The Python installers for Windows include pip. You should be able to access pip using:
+```
+py -m pip --version
+pip 9.0.1 from c:\python36\lib\site-packages (Python 3.6.1)
+```
+
+### Install Virtualenv [🔗](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv)
+#### MacOS and Linux
+```
+python3 -m pip install --user virtualenv
+```
+
+#### Windows   
+```
+py -m pip install --user virtualenv
+```
+
+### Creating and activating a Virtual environment [🔗](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
+#### MacOS and Linux
+Create a virtual environment using the below command
+```
+python3 -m venv env
+```
+
+Activate a virtual environment using the below command
+```
+source env/bin/activate
+```
+
+#### Windows   
+Create a virtual environment using the below command
+```
+py -m venv env
+```
+
+Activate a virtual environment using the below command
+```
+.\env\Scripts\activate
+```
+-----
+To leave the Virtual environment, simply use 
+```
+deactivate
+```
 ### New to Python?
 
 **Pssst... Do you use a Mac?** 👩‍💻 
@@ -57,9 +108,11 @@ python --version
 
 
 ## Unit Tests are important. Let's see how we can run them 👩‍🏫 
-Make sure that you are in the root **/intercom** folder.
+Make sure that you are in the root **/intercom** folder.  
+Also, make sure that you virtual environment has been created and activated.  
+You can use the "**Creating and activating a Virtual environment**" section mentioned above to create and activate a virtualenv.
 
-Try running the below command to run the Test Cases
+Try running the below command(after activating the virtualenv) to run the Test Cases
 ```bash
 python -m unittest tests/test.py
 ```
