@@ -80,7 +80,11 @@ class TestCustomerInvitationService(unittest.TestCase):
         for customer in matching_customers:
             customer_lat, customer_long = float(customer['latitude']), float(customer['longitude'])
             distance = CustomerInvitationService.calculate_distance_from_destination(customer_lat, customer_long)
-            # Rounding the float value since the values calculated can be a little off for different systems
+
+            # Rounding the float value since the values calculated can be a little off for different systems.
+            # From the given wikipedia article: https://en.wikipedia.org/wiki/Great-circle_distance
+            # On computer systems with low floating-point precision,
+            # the spherical law of cosines formula can have large rounding errors if the distance is small
             self.assertEqual(round(distance, 2), round(user_id_vs_distance[customer['user_id']], 2))
 
     def test_distance_formula_correctness(self):
@@ -96,7 +100,10 @@ class TestCustomerInvitationService(unittest.TestCase):
             intercom_london_latitude, intercom_london_longitude
         )
 
-        # Rounding the float value since the values calculated can be a little off for different systems
+        # Rounding the float value since the values calculated can be a little off for different systems.
+        # From the given wikipedia article: https://en.wikipedia.org/wiki/Great-circle_distance
+        # On computer systems with low floating-point precision,
+        # the spherical law of cosines formula can have large rounding errors if the distance is small
         self.assertEqual(round(distance, 2), round(462.2627320552066, 2))
 
     def test_get_matching_customers_sorted(self):
