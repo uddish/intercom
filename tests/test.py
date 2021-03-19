@@ -80,12 +80,15 @@ class TestCustomerInvitationService(unittest.TestCase):
         for customer in matching_customers:
             customer_lat, customer_long = float(customer['latitude']), float(customer['longitude'])
             distance = CustomerInvitationService.calculate_distance_from_destination(customer_lat, customer_long)
-            self.assertEqual(distance, user_id_vs_distance[customer['user_id']])
+            # Rounding the float value since the values calculated can be a little off for different systems
+            self.assertEqual(round(distance, 2), round(user_id_vs_distance[customer['user_id']], 2))
 
     def test_distance_formula_correctness(self):
         # Taking Intercom's London Office coordinates and calculating their distance from Intercom's Ireland office
         # Please use this link to calculate the distance between two coordinate points
         # https://www.geodatasource.com/distance-calculator
+        # Please note that the distance calculated from the above website can be a little different from the distance
+        # calculated by using our formula
 
         intercom_london_latitude = 51.571732361751074
         intercom_london_longitude = -0.07964202473350517
@@ -93,7 +96,8 @@ class TestCustomerInvitationService(unittest.TestCase):
             intercom_london_latitude, intercom_london_longitude
         )
 
-        self.assertEqual(distance, 462.2627320552066)
+        # Rounding the float value since the values calculated can be a little off for different systems
+        self.assertEqual(round(distance, 2), round(462.2627320552066, 2))
 
     def test_get_matching_customers_sorted(self):
         customer_data = IOService.read_input_from_file(test_input)
