@@ -14,7 +14,7 @@ git clone https://github.com/uddish/intercom-activity.git
 
 ### New to Python?
 
-**Pssst... Do you use a Mac?** 
+**Pssst... Do you use a Mac?** 👩‍💻 
 
 *Option 1*
 - Use Homebrew to install python -> ```brew install python```
@@ -26,7 +26,7 @@ git clone https://github.com/uddish/intercom-activity.git
 *Option 3*
 - Still not sure how to install Python. [Follow this extensive guide](https://realpython.com/installing-python/#how-to-install-python-on-macos) 
 
-**Are you a windows user?** 
+**Are you a windows user?** 🖥
 
 *Option 1*
 - Use the official [Python installer](https://www.python.org/downloads/windows/). 
@@ -34,7 +34,7 @@ git clone https://github.com/uddish/intercom-activity.git
 *Option 2*
 - Still stuck? Follow this [extensive guide](https://realpython.com/installing-python/#how-to-check-your-python-version-on-windows) 
 
-**Linux and Other Platforms?**
+**Linux and Other Platforms?** 💻
 - Install python on **Linux** by following this [guide](https://realpython.com/installing-python/#how-to-install-python-on-linux) 
 - Install python on **other platforms**. [Check this link](https://www.python.org/download/other/)
 
