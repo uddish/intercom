@@ -17,12 +17,20 @@ git clone https://github.com/uddish/intercom.git
 ```
 python3 -m pip install --user --upgrade pip
 ```
+You can check installed pip's version using:
+```
+python3 -m pip --version
+```
 
 #### Windows   
 The Python installers for Windows include pip. You should be able to access pip using:
 ```
 py -m pip --version
 pip 9.0.1 from c:\python36\lib\site-packages (Python 3.6.1)
+```
+You can make sure that pip is up-to-date by running:
+```
+py -m pip install --upgrade pip
 ```
 
 ### Install Virtualenv [🔗](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv)
@@ -38,6 +46,12 @@ py -m pip install --user virtualenv
 
 ### Creating and activating a Virtual environment [🔗](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)
 #### MacOS and Linux
+
+Go the the downloaded intercom folder by using
+```
+cd intercom
+``` 
+
 Create a virtual environment using the below command
 ```
 python3 -m venv env

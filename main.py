@@ -12,7 +12,7 @@ def execute_intercom_activity():
     matching_customers = CustomerInvitationService.get_matching_customers(customer_list)
     # Writing the matched customers to an output file
     IOService.write_output_to_file(matching_customers, OUTPUT_FILE)
-    print('******** Customers added to the output file. Please check output.txt in the root /Intercom folder ********')
+    print('******** Customers added to the output file. Please check output.txt in the root /intercom folder ********')
 
 
 if __name__ == '__main__':
